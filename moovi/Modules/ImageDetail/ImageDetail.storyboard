@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Detail View Controller-->
+        <scene sceneID="pft-Vf-tD3">
+            <objects>
+                <viewController storyboardIdentifier="ImageDetailViewController" automaticallyAdjustsScrollViewInsets="NO" id="bFA-He-zvI" customClass="ImageDetailViewController" customModule="moovi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w7w-yw-qN3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XRJ-JN-g6P">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdU-hA-HRj">
+                                <rect key="frame" x="366" y="104" width="32" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="UdL-AK-06L">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="AdU-hA-HRj" secondAttribute="height" multiplier="1:1" id="keN-cU-ReH"/>
+                                </constraints>
+                                <state key="normal" image="ic_exit_white_16"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonTapped" destination="bFA-He-zvI" eventType="touchUpInside" id="wII-Fp-zqe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iCe-M4-6uA" firstAttribute="trailing" secondItem="XRJ-JN-g6P" secondAttribute="trailing" id="GSo-FC-rDC"/>
+                            <constraint firstItem="AdU-hA-HRj" firstAttribute="top" secondItem="iCe-M4-6uA" secondAttribute="top" constant="16" id="Qym-el-2oZ"/>
+                            <constraint firstItem="XRJ-JN-g6P" firstAttribute="top" secondItem="w7w-yw-qN3" secondAttribute="top" id="U5a-ZT-zEL"/>
+                            <constraint firstAttribute="bottom" secondItem="XRJ-JN-g6P" secondAttribute="bottom" id="bpA-BZ-ufo"/>
+                            <constraint firstItem="iCe-M4-6uA" firstAttribute="trailing" secondItem="AdU-hA-HRj" secondAttribute="trailing" constant="16" id="itA-eK-Es0"/>
+                            <constraint firstItem="XRJ-JN-g6P" firstAttribute="leading" secondItem="iCe-M4-6uA" secondAttribute="leading" id="vtI-hd-hZc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iCe-M4-6uA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mSg-Xf-bbF">
+                        <barButtonItem key="backBarButtonItem" title=" " id="7fS-N4-uQy"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="closeButton" destination="AdU-hA-HRj" id="UbI-e5-lgo"/>
+                        <outlet property="imageView" destination="XRJ-JN-g6P" id="42E-xH-zlY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbY-YZ-aXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.68115942028987" y="1329.9107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_exit_white_16" width="16" height="16"/>
+    </resources>
+</document>

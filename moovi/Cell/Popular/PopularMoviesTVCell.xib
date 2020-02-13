@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="258" id="22r-tI-IhJ" customClass="PopularMoviesTVCell" customModule="moovi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="22r-tI-IhJ" id="gJN-VY-IJa">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mQR-rw-zn5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N4c-VQ-9ZW">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mQR-rw-zn5" firstAttribute="top" secondItem="gJN-VY-IJa" secondAttribute="top" id="XAr-Uu-Bck"/>
+                    <constraint firstItem="mQR-rw-zn5" firstAttribute="leading" secondItem="gJN-VY-IJa" secondAttribute="leading" id="eg8-D8-q4K"/>
+                    <constraint firstAttribute="bottom" secondItem="mQR-rw-zn5" secondAttribute="bottom" id="h9e-F7-5cl"/>
+                    <constraint firstAttribute="trailing" secondItem="mQR-rw-zn5" secondAttribute="trailing" id="wgD-UX-Tc9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="3Ko-M8-K5X"/>
+            <connections>
+                <outlet property="collectionView" destination="mQR-rw-zn5" id="h0F-I5-i8b"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="261.16071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

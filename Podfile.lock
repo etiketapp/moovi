@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - Kingfisher (4.10.1)
+  - lottie-ios (3.1.6)
+  - SVProgressHUD (2.2.5)
+  - TinyConstraints (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireNetworkActivityIndicator
+  - Kingfisher (~> 4.2)
+  - lottie-ios
+  - SVProgressHUD
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - Kingfisher
+    - lottie-ios
+    - SVProgressHUD
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+
+PODFILE CHECKSUM: 0434b1f7310e1f085773676f56df78c8e366e198
+
+COCOAPODS: 1.8.4

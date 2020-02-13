@@ -1,0 +1,6 @@
+framework module Pods_moovi {
+  umbrella header "Pods-moovi-umbrella.h"
+
+  export *
+  module * { export * }
+}
