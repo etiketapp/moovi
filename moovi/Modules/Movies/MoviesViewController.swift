@@ -149,6 +149,7 @@ extension MoviesViewController: UITableViewDataSource, UITableViewDelegate {
 //MARK: - Search
 extension MoviesViewController: SearchBarTVCellDelegate {
     func didSearch(searchString: String?) {
+        guard searchString != "" else { return }
         self.presenter.page = 1
         self.presenter.searchString = searchString
         self.presenter.search(searchString)
