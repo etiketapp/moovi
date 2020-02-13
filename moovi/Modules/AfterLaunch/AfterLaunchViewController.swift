@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AfterLaunchViewController: BaseVC {
+class AfterLaunchViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet private weak var introImageView: UIImageView!
